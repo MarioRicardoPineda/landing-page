@@ -1,0 +1,109 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(45deg, #018 30%, #04c, #06f );
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    color: #fff;
+}
+
+.logo{
+    letter-spacing: 1px;
+    font-size: 2.5em;
+    color: rgb(44, 127, 252);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    width: 55%; 
+}
+
+.menu__item{
+    padding: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn{
+    width: 180px;
+    text-align: center;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #0066ff;
+    background-color: #fff;
+}
+
+/* - - - - - -  - Contenido .-- - - -  - - -*/
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 15rem auto 0 ;
+    position: relative;
+}
+.content-txt,.content-img{
+    width: 45%;
+    min-height: 10rem;
+    color: hsl(216, 100%, 85%);
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+.content-img{
+    width: 40%;
+    height: 30rem;
+    position: absolute;
+    top: -150px;
+    right: 0;
+}
+.content-img img{
+    width: 100%;
+    height: 100%;
+    
+}
+.content-txt h2{
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+
+.content-txt p{
+    font-size: 15px;
+    margin-bottom: 2rem;
+}
+
+.active{
+    display: block;
+    background-image: linear-gradient(90deg,#06f, #04c);
+    color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 5px 10px -3px rgba(0,0,0,.7);
+}
